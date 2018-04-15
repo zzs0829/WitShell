@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/console/icon_attribute.ico</file>
+        <file>res/console/icon_create.ico</file>
+        <file>res/console/icon_copy.ico</file>
+        <file>res/console/icon_session.ico</file>
+    </qresource>
+</RCC>
