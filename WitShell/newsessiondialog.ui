@@ -289,6 +289,18 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>txt_name</tabstop>
+  <tabstop>cbx_port</tabstop>
+  <tabstop>cbx_baud</tabstop>
+  <tabstop>cbx_data</tabstop>
+  <tabstop>cbx_stop</tabstop>
+  <tabstop>cbx_parity</tabstop>
+  <tabstop>cbx_flow</tabstop>
+  <tabstop>btn_submit</tabstop>
+  <tabstop>btn_cancel</tabstop>
+  <tabstop>treeWidget</tabstop>
+ </tabstops>
  <resources>
   <include location="res.qrc"/>
  </resources>
