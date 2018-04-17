@@ -6,17 +6,16 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>598</width>
-    <height>352</height>
+    <width>800</width>
+    <height>480</height>
    </rect>
-  </property>
-  <property name="font">
-   <font>
-    <pointsize>9</pointsize>
-   </font>
   </property>
   <property name="windowTitle">
    <string>WitConsole</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/res/logo/logo_72px.ico</normaloff>:/res/logo/logo_72px.ico</iconset>
   </property>
   <property name="layoutDirection">
    <enum>Qt::LeftToRight</enum>
@@ -38,9 +37,6 @@
     <property name="bottomMargin">
      <number>0</number>
     </property>
-    <item>
-     <widget class="QTextBrowser" name="textBrowser"/>
-    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -48,7 +44,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>598</width>
+     <width>800</width>
      <height>23</height>
     </rect>
    </property>
@@ -66,11 +62,12 @@
    <addaction name="act_session"/>
    <addaction name="act_attribute"/>
    <addaction name="separator"/>
+   <addaction name="act_font"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="act_attribute">
    <property name="icon">
-    <iconset>
+    <iconset resource="res.qrc">
      <normaloff>:/res/console/icon_attribute.ico</normaloff>:/res/console/icon_attribute.ico</iconset>
    </property>
    <property name="text">
@@ -82,7 +79,7 @@
   </action>
   <action name="act_session">
    <property name="icon">
-    <iconset>
+    <iconset resource="res.qrc">
      <normaloff>:/res/console/icon_session.ico</normaloff>:/res/console/icon_session.ico</iconset>
    </property>
    <property name="text">
@@ -92,8 +89,19 @@
     <string>Alt+P</string>
    </property>
   </action>
+  <action name="act_font">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/console/icon_font.ico</normaloff>:/res/console/icon_font.ico</iconset>
+   </property>
+   <property name="text">
+    <string>字体</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

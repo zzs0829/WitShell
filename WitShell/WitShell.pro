@@ -29,18 +29,23 @@ SOURCES += \
     newsessiondialog.cpp \
     allsessiondialog.cpp \
     sessionattribute.cpp \
-    serialsessionattribute.cpp
+    serialsessionattribute.cpp \
+    consoletextedit.cpp \
+    sessionattributelist.cpp \
+    settingsession.cpp
 
 HEADERS += \
         witconsole.h \
     newsessiondialog.h \
     allsessiondialog.h \
     sessionattribute.h \
-    serialsessionattribute.h
+    serialsessionattribute.h \
+    consoletextedit.h \
+    sessionattributelist.h \
+    settingsession.h
 
 FORMS += \
         witconsole.ui \
-    newsessiondialog.ui \
     newsessiondialog.ui \
     allsessiondialog.ui
 
