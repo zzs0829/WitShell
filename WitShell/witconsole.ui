@@ -50,6 +50,12 @@
    </property>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>标准工具栏</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
    <property name="toolButtonStyle">
     <enum>Qt::ToolButtonTextBesideIcon</enum>
    </property>
@@ -62,9 +68,31 @@
    <addaction name="act_session"/>
    <addaction name="act_attribute"/>
    <addaction name="separator"/>
+   <addaction name="act_connect"/>
+   <addaction name="act_disconnect"/>
+   <addaction name="separator"/>
+   <addaction name="act_find"/>
    <addaction name="act_font"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="contextMenuPolicy">
+    <enum>Qt::ActionsContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>工具集</string>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::BottomToolBarArea|Qt::LeftToolBarArea|Qt::RightToolBarArea</set>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action"/>
+  </widget>
   <action name="act_attribute">
    <property name="icon">
     <iconset resource="res.qrc">
@@ -96,6 +124,44 @@
    </property>
    <property name="text">
     <string>字体</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>添加</string>
+   </property>
+  </action>
+  <action name="act_connect">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/console/icon_connect.ico</normaloff>:/res/console/icon_connect.ico</iconset>
+   </property>
+   <property name="text">
+    <string>连接</string>
+   </property>
+  </action>
+  <action name="act_disconnect">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/console/icon_disconnect.ico</normaloff>:/res/console/icon_disconnect.ico</iconset>
+   </property>
+   <property name="text">
+    <string>断开</string>
+   </property>
+  </action>
+  <action name="act_find">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/console/icon_search.ico</normaloff>:/res/console/icon_search.ico</iconset>
+   </property>
+   <property name="text">
+    <string>查找</string>
    </property>
   </action>
  </widget>

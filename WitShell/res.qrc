@@ -11,5 +11,9 @@
         <file>res/logo/logo_64px.ico</file>
         <file>res/logo/logo_72px.ico</file>
         <file>res/console/icon_font.ico</file>
+        <file>res/console/icon_connect.ico</file>
+        <file>res/console/icon_disconnect.ico</file>
+        <file>res/console/icon_fullscreen.ico</file>
+        <file>res/console/icon_search.ico</file>
     </qresource>
 </RCC>
