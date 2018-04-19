@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>WitConsole</string>
+   <string>WitShell</string>
   </property>
   <property name="windowIcon">
    <iconset resource="res.qrc">
@@ -73,6 +73,7 @@
    <addaction name="separator"/>
    <addaction name="act_find"/>
    <addaction name="act_font"/>
+   <addaction name="act_fullscreen"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="QToolBar" name="toolBar">
@@ -114,7 +115,7 @@
     <string>会话</string>
    </property>
    <property name="shortcut">
-    <string>Alt+P</string>
+    <string>Alt+O</string>
    </property>
   </action>
   <action name="act_font">
@@ -162,6 +163,15 @@
    </property>
    <property name="text">
     <string>查找</string>
+   </property>
+  </action>
+  <action name="act_fullscreen">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/console/icon_fullscreen.ico</normaloff>:/res/console/icon_fullscreen.ico</iconset>
+   </property>
+   <property name="text">
+    <string>全屏</string>
    </property>
   </action>
  </widget>
